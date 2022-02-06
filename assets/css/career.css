@@ -111,8 +111,24 @@
     .apply-part .container {
         display: block;
     }
+    .apply-part .container .black-btn {
+        margin-top: 20px;
+    }
 }
 @media (min-width: 640px) {
+    .role-part .tech-role {
+        display: none;
+    }
+    .role-part .tech-role-mobile {
+        display: block;
+    }
+
+    .apply-part .container {
+        display: block;
+    }
+    .apply-part .container .black-btn {
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -121,8 +137,17 @@
 @media (min-width: 1024px) {
 }
 @media (min-width: 1280px) {
+    .role-part .tech-role {
+        display: none;
+    }
+    .role-part .tech-role-mobile {
+        display: block;
+    }
 
-}
-@media (min-width: 1536px) {
-
+    .apply-part .container {
+        display: flex;
+    }
+    .apply-part .container .black-btn {
+        margin-top: 0;
+    }
 }

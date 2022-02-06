@@ -85,7 +85,7 @@ section.social-part .container > div > div {
     }
 }
 @media (min-width: 640px) {
-    section.title-part {
+    /* section.title-part {
         margin-top: 30px;
     }
     section.list-part .item > div:first-child > div:last-child {
@@ -93,6 +93,15 @@ section.social-part .container > div > div {
     }
     section.list-part .item > div:last-child {
         display: none;
+    } */
+    section.title-part {
+        margin-top: 30px;
+    }
+    section.list-part .item > div:first-child > div:last-child {
+        display: none;
+    }
+    section.list-part .item > div:last-child {
+        display: flex;
     }
 }
 

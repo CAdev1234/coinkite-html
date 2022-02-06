@@ -152,6 +152,7 @@ div.line {
 @media (max-width: 639px) {
     .container {
         padding: 0px 20px;
+        max-width: 320px;
     }
     .header {
         padding: 20px;
@@ -188,8 +189,9 @@ div.line {
     }
 }
 @media (min-width: 640px) {
-    .container {
+    /* .container {
         padding: 0 20px;
+        max-width: 320px;
     }
     header div:nth-child(2) a {
         display: block;
@@ -208,12 +210,52 @@ div.line {
     }
     .footer .copyright-part > div {
         margin-top: 0px;
+    } */
+
+
+    .container {
+        padding: 0px 20px;
+        max-width: 320px;
+    }
+    .header {
+        padding: 20px;
+    }
+    .header .logo {
+        width: 101px !important;
+    }
+    .header div:nth-child(2) a {
+        display: none;
+    } 
+    .header .mobile-menu-btn {
+        display: block;
+    }
+    .footer .main-part {
+        display: block;
+        padding-bottom: 55px;
+    }
+    .footer .main-part > div:nth-child(2) {
+        margin-top: 52px;
+    }
+    .footer .copyright-part {
+        display: block;
+    }
+    .footer .copyright-part > div {
+        margin-top: 12px;
+    }
+    .footer .copyright-part > span:first-child {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    h1.title {
+        font-size: 39px;
     }
 }
 
 @media (min-width: 768px) {
     .container {
         padding: 0 20px;
+        max-width: 720px;
     }
     
 }
@@ -229,16 +271,30 @@ div.line {
     }
 }
 @media (min-width: 1280px) {
+    header div:nth-child(2) a {
+        display: block !important;
+    }
+    header .mobile-menu-btn {
+        display: none !important;
+    }
     .container {
         padding: 0 140px;
+        max-width: 1440px;
     }
     .footer .main-part > div:nth-child(2) > div:last-child {
         margin-right: 95px;
     }
 }
-@media (min-width: 1536px) {
+@media (min-width: 1435px) {
     .container {
         padding: 0 140px;
+        max-width: 1440px;
+    }
+    .footer .main-part {
+        display: flex;
+    }
+    .footer .main-part > div:nth-child(2) {
+        margin-top: 0px;
     }
 }
 
