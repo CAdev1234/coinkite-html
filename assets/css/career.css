@@ -1,0 +1,128 @@
+.title-part {
+    display: flex;flex-direction: column; column-gap: 9px;
+}
+
+.role-part {
+    margin-top: 55px;
+}
+.role-part .tech-role {
+    display: block;
+    background-color: white;
+}
+.role-part .tech-role.other-role {
+    margin-top: 30px;
+}
+.role-part .tech-role .heading {
+    display: flex; align-items: center; padding-top: 21px; padding-bottom: 23px; padding-inline: 30px;border-bottom: 1px solid #E6E6E6;
+}
+.role-part .tech-role .heading div:first-child {
+    width: 348px;
+}
+.role-part .tech-role .heading div:last-child {
+    flex: 1 1 0;
+}
+.role-part .tech-role .item {
+    display: flex; align-items: center; padding: 0 30px;
+}
+.role-part .tech-role .item > div {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+    padding-top: 21px; padding-bottom: 24px;
+}
+.role-part .tech-role .item div:last-child span {
+    max-width: 612px;
+    display: block;
+    word-break: break-all;
+}
+.role-part .tech-role .item.not-last > div {
+    border-bottom: 1px solid #E6E6E6;
+}
+.role-part .tech-role.other-role .item.not-last > div {
+    border-bottom: none;
+}
+.role-part .tech-role .item > div > span:first-child {
+    width: 348px;
+    min-width: 348px;
+    /* min-width: 225px;
+    flex: 1 1 0; */
+}
+.role-part .tech-role .item div:first-child span {
+    font-weight: bold;
+}
+
+.role-part .tech-role-mobile {
+    display: none;
+    background-color: white; margin-top: 30px;
+}
+.role-part .tech-role-mobile .item {
+    display: flex;padding: 10px 15px;
+}
+.role-part .tech-role-mobile .item.not-last {
+    border-bottom: 1px solid #E6E6E6;
+}
+.role-part .tech-role-mobile .item span.mini-txt {
+    margin-right: 20px;
+}
+.role-part .tech-role-mobile .item span.txt {
+    margin-left: auto; font-weight: bold; word-break: break-all;
+}
+
+
+
+
+
+.apply-part {
+    width: 100%; display: flex; align-items: center; margin-top: 117px;border-bottom: 1px solid #E6E6E6;padding-top: 75px;padding-bottom: 69px;background-color: white;
+}
+.apply-part .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.apply-part .container div:first-child {
+    display: flex; flex-direction: column;
+    flex: 1 1 0;
+}
+
+.apply-part .container div div {
+    margin-top: 21px; max-width: 683px;width: 100%;
+}
+.apply-part .container button {
+    margin-left: auto;
+}
+
+
+
+
+
+
+@media (max-width: 639px) {
+    .role-part .tech-role {
+        display: none;
+    }
+    .role-part .tech-role-mobile {
+        display: block;
+    }
+
+    .apply-part .container {
+        display: block;
+    }
+}
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+    
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
+
+}
+@media (min-width: 1536px) {
+
+}
