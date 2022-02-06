@@ -15,7 +15,11 @@ button:focus, input:focus, textarea:focus {
 .container {
     display: flex;
     flex-direction: column;
-    padding: 0px 140px;
+    /* padding: 0px 140px; */
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 h1.title {
     font-size: 65px;
@@ -70,27 +74,34 @@ div.line {
 
 
 .header {
-    padding: 24px 60px;
+    padding: 24px 0px;
     display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+.header .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 .header .logo {
     width: 148px;
 }
-.header div:nth-child(1) {
+.header .container div:nth-child(1) {
     width: 148px;
 }
 .header img {
     width: 100%;
 }
 
-.header div:nth-child(2) {
+.header .container div:nth-child(2) {
     display: flex;
     align-items: center;
     column-gap: 20px;
     margin-left: auto;
 }
-.header div:nth-child(2) a {
+.header .container div:nth-child(2) a {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -207,9 +218,9 @@ div.line {
     
 }
 @media (min-width: 1024px) {
-    .container {
+    /* .container {
         padding: 0 140px;
-    }
+    } */
     .footer .main-part > div:first-child {
         padding-right: 29.09vw;
     }
@@ -218,11 +229,16 @@ div.line {
     }
 }
 @media (min-width: 1280px) {
+    .container {
+        padding: 0 140px;
+    }
     .footer .main-part > div:nth-child(2) > div:last-child {
         margin-right: 95px;
     }
 }
 @media (min-width: 1536px) {
-
+    .container {
+        padding: 0 140px;
+    }
 }
 

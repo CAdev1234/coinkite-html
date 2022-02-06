@@ -1,5 +1,11 @@
+header {
+    background-color: white;
+}
 .home-page {
     overflow-x: hidden;
+}
+.title-section {
+    background-image: linear-gradient(white, rgb(248, 248, 248));
 }
 section.title-part {
     position: relative;
@@ -56,13 +62,14 @@ section.title-part button.black-btn {
 
 section.product-part {
     padding: 60px 0px;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 40px;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 20px;   
+    flex-wrap: wrap; */
+    row-gap: 20px;
+    justify-items: center;
 }
 .product-card {
     display: flex;
@@ -132,7 +139,14 @@ section.product-part {
 }
 .archive-part > div {
     margin-top: 41px;
-    display: flex; flex-direction: row; flex-wrap: wrap; column-gap: 35px; row-gap: 20px;
+    /* display: flex;  */
+    display: grid;
+    /* flex-direction: row; 
+    flex-wrap: wrap;  */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 35px; 
+    row-gap: 20px;
+    justify-items: center;
 }
 .archive-card {
     padding: 25px;background-color: white;
@@ -209,6 +223,13 @@ section.product-part {
         margin-left: auto;
         margin-right: auto;
     }
+
+    section.product-part {
+        grid-template-columns: 1fr;
+    }
+    .archive-part > div {
+        grid-template-columns: 1fr;
+    }
     
 }
 @media (min-width: 640px) {
@@ -225,6 +246,12 @@ section.product-part {
     .title-part .right-ele .scroll-down {
         display: none;
     }
+    section.product-part {
+        grid-template-columns: 1fr;
+    }
+    .archive-part > div {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (min-width: 768px) {
@@ -237,6 +264,12 @@ section.product-part {
     .title-part .right-ele .scroll-down {
         display: none;
     }
+    section.product-part {
+        grid-template-columns: 1fr 1fr;
+    }
+    .archive-part > div {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media (min-width: 1024px) {
     .title-part .right-ele {
@@ -248,10 +281,20 @@ section.product-part {
     .archive-card {
         width: 262px;
     }
+    section.product-part {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .archive-part > div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 @media (min-width: 1280px) {
-
+    .archive-part > div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
-@media (min-width: 1536px) {
-
+@media (min-width: 1435px) {
+    .archive-part > div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }

@@ -1,9 +1,16 @@
+header {
+    background-color: white;
+}
+
+.article-gradient-part {
+    height: 60px;
+    width: 100%;
+    background-image: linear-gradient(white, rgb(248, 248, 248));
+}
 .article-page {
     display: flex; flex-direction: column; max-width: 1040px;margin-left: auto; margin-right: auto;
 }
-.article-page section.title-part {
-    margin-top: 60px;
-}
+
 .article-page section.title-part div {
     width: 100%;margin-top: 64px;
 }
