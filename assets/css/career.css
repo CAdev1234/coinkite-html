@@ -8,8 +8,9 @@
 .role-part .tech-role {
     display: block;
     background-color: white;
+    border-radius: 5px;
 }
-.role-part .tech-role.other-role {
+.role-part .tech-role.other-role, .role-part .tech-role-mobile.other-role {
     margin-top: 30px;
 }
 .role-part .tech-role .heading {
@@ -44,16 +45,18 @@
 .role-part .tech-role .item > div > span:first-child {
     width: 348px;
     min-width: 348px;
+    font-weight: bold;
     /* min-width: 225px;
     flex: 1 1 0; */
 }
-.role-part .tech-role .item div:first-child span {
-    font-weight: bold;
-}
+/* .role-part .tech-role .item div:first-child span {
+    
+} */
 
 .role-part .tech-role-mobile {
     display: none;
-    background-color: white; margin-top: 30px;
+    background-color: white;
+    border-radius: 5px;
 }
 .role-part .tech-role-mobile .item {
     display: flex;padding: 10px 15px;
@@ -138,10 +141,10 @@
 }
 @media (min-width: 1280px) {
     .role-part .tech-role {
-        display: none;
+        display: block;
     }
     .role-part .tech-role-mobile {
-        display: block;
+        display: none;
     }
 
     .apply-part .container {

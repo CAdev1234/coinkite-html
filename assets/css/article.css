@@ -8,8 +8,15 @@ header {
     background-image: linear-gradient(white, rgb(248, 248, 248));
 }
 .article-page {
-    display: flex; flex-direction: column; max-width: 1040px;margin-left: auto; margin-right: auto;
+    display: flex; flex-direction: column; 
+    /* max-width: 1040px; */
+    /* margin-left: auto; margin-right: auto; */
 }
+
+/* .container.title-section {
+    margin-left: 0;
+    margin-right: 0;
+} */
 
 .article-page section.title-part div {
     width: 100%;margin-top: 64px;
