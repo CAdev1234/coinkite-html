@@ -176,8 +176,11 @@ div.line {
 .footer .main-part > div:first-child button {
     margin-top: 22px;
 }
-.footer .main-part img {
-    width: 180px;
+.footer .main-part .dev-brand {
+    display: flex; flex-direction: row; align-items: center;
+}
+.footer .main-part .dev-brand img {
+    width: 15px;margin: 0 4px;
 }
 .footer .main-part > div:nth-child(2) {
     display: flex; flex: 1 1 0;flex-direction: row; justify-content: space-between;
