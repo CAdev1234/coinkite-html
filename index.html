@@ -19,7 +19,7 @@
                 <a href="/blog.html">Blog</a>
                 <a href="/career.html">Careers</a>
                 <a href="">Contact</a>
-                <div class="mobile-menu-btn">
+                <div class="mobile-menu-btn" onclick="openNav()">
                     <svg width="18px" height="11px" viewBox="0 0 18 11" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                         <g id="Actions--Navigation--menu--24">
                           <path d="M0 9L18 9L18 10.5L0 10.5L0 9ZM0 0L18 0L18 1.5L0 1.5L0 0ZM0 4.5L18 4.5L18 6L0 6L0 4.5Z" id="Fill" fill="#000000" fill-rule="evenodd" stroke="none" />
@@ -245,17 +245,17 @@
                     <div>
                         <h3 class="title">Products</h3>
                         <div>
-                            <span class="medium-txt">Opendime</span>
-                            <span class="medium-txt">Speedplate</span>
-                            <span class="medium-txt">Blockclock</span>
+                            <a href="/"><span class="medium-txt">Opendime</span></a>
+                            <a href="/"><span class="medium-txt">Speedplate</span></a>
+                            <a href="/"><span class="medium-txt">Blockclock</span></a>
                         </div>
                     </div>
                     <div>
                         <h3 class="title">Support</h3>
                         <div>
-                            <span class="medium-txt">Responsible Disclosure</span>
-                            <span class="medium-txt">Terms of service</span>
-                            <span class="medium-txt">White Paper</span>
+                            <a href="/"><span class="medium-txt">Responsible Disclosure</span></a>
+                            <a href="/"><span class="medium-txt">Terms of service</span></a>
+                            <a href="/"><span class="medium-txt">White Paper</span></a>
                         </div>
                     </div>
                 </div>
@@ -264,11 +264,30 @@
             <div class="copyright-part">
                 <span>Copyright © 2021 Coinkite Inc. All rights reserved.</span>
                 <div>
-                    <span class="medium-txt">support@coinkite.com</span>
+                    <a href="mailto:support@coinkite.com"><span class="medium-txt">support@coinkite.com</span></a>
                 </div>
                 
             </div>
         </div>
     </footer>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">Home</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/career.html">Careers</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
   </body>
 </html>

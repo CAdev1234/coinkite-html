@@ -19,10 +19,13 @@ section.list-part {
 }
 
 section.list-part .item {
-    background-color: white;padding: 28px 30px 24px 25px;border-radius: 5px;
+    background-color: white;
+    padding: 28px 30px 24px 25px;
+    border-radius: 3px;
+    border: 2px solid transparent;
 }
 section.list-part .item:hover {
-    border: 3px solid black;
+    border-color: black;
 }
 section.list-part .item > div:first-child {
     display:flex;flex-direction: row; align-items:center;

@@ -5,7 +5,15 @@ header {
     overflow-x: hidden;
 }
 .title-section {
-    background-image: linear-gradient(white, rgb(248, 248, 248));
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.5) 65%,
+    rgba(255, 255, 255, 0.3) 75.5%,
+    rgba(255, 255, 255, 0.2) 82.85%,
+    rgba(255, 255, 255, 0.1) 88%,
+    rgba(255, 255, 255, 0) 100%
+    );
 }
 section.title-part {
     position: relative;
@@ -28,19 +36,23 @@ section.title-part button.black-btn {
 }
 .title-part .flag span {
     font-weight: bold;
+    color: black;
 } 
 .title-part .detail {
     margin-top: 11px;
+    color: black;
 }
 .title-part .scroll-down {
     align-items: center;
 }
 .title-part .scroll-down span {
     margin-left: 15px;
+    color: black;
 }
 .title-part .left-ele .scroll-down {
     display: none;
     margin-top: 20px;
+    color: black;
 }
 
 .title-part .right-ele {
@@ -55,6 +67,7 @@ section.title-part button.black-btn {
     align-items: center;
     margin-top: auto;
     margin-bottom: 100px;
+    color: black;
 }
 
 
@@ -80,10 +93,11 @@ section.product-part {
     max-width: 360px;
     box-sizing: border-box;
     cursor: pointer;
-    border-radius: 5px;
+    border: 2px transparent solid;
+    border-radius: 3px;
 }
 .product-card:hover {
-    border: 3px solid black;
+    border: 2px solid black;
 }
 .product-card .logo {
     height: 34px;display: flex; flex-direction: column;
@@ -131,13 +145,21 @@ section.product-part {
     color: black;
     font-weight: bold;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 3px;
     height: 45px;
     width: 100%;
 }
 
+.product-card .action button:hover {
+    background-color: black;
+    color: white;
+}
+
 .archive-part {
     padding: 42px 0px 90px 0px;
+}
+.archive-part h2 {
+    font-family: 'Roboto';
 }
 .archive-part > div {
     margin-top: 41px;
@@ -153,9 +175,10 @@ section.product-part {
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 5px;
+    border: 1px solid transparent;
 }
 .archive-card:hover {
-    border: 3px solid black
+    border: 1px solid black
 }
 .archive-card .logo {
     height: 34px;display: flex; flex-direction: column;
@@ -185,9 +208,13 @@ section.product-part {
     color: black;
     font-weight: bold;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 3px;
     height: 45px;
     width: 100%;
+}
+.archive-card .action button:hover {
+    background-color: black;
+    color: white;
 }
 
 
@@ -343,21 +370,17 @@ section.product-part {
     .archive-card {
         width: 262px;
     }
-    /* .archive-card:nth-child(3n + 1) {
-        margin-left: 0;
-    } */
     .archive-card:nth-child(3n + 2) {
         margin-left: auto;
-        /* margin-right: auto; */
     }
-    /* .archive-card:nth-child(3n + 3) {
-        margin-left: auto;
-        margin-right: auto;
-    } */
 }
 @media (min-width: 1435px) {
     .title-part .left-ele .scroll-down {
         display: none;
+    }
+    .title-part .left-ele .detail .txt {
+        max-width: none;
+        display: block;
     }
     .title-part .right-ele {
         right: 0;
@@ -376,10 +399,4 @@ section.product-part {
         margin-left: 0;
         margin-right: 0;
     }
-    /* .archive-card:nth-child(3n + 3) {
-        margin-right: auto !important;
-    }
-    .archive-card:nth-child(3n + 4) {
-        margin-left: auto !important;
-    } */
 }

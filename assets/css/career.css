@@ -8,7 +8,7 @@
 .role-part .tech-role {
     display: block;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .role-part .tech-role.other-role, .role-part .tech-role-mobile.other-role {
     margin-top: 30px;
@@ -56,7 +56,7 @@
 .role-part .tech-role-mobile {
     display: none;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .role-part .tech-role-mobile .item {
     display: flex;padding: 10px 15px;
