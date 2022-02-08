@@ -113,6 +113,9 @@ button.social-btn {
     background-color: white;
     border-radius: 3px;
     border: 1px solid black;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
 }
 div.line {
     background-color: #E6E6E6;
