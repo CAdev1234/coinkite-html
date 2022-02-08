@@ -78,7 +78,7 @@ section.social-part .container > div > div {
 }
 
 
-@media (max-width: 639px) {
+@media (max-width: 576px) {
     section.title-part {
         margin-top: 30px;
     }
@@ -89,16 +89,7 @@ section.social-part .container > div > div {
         display: flex;
     }
 }
-@media (min-width: 640px) {
-    /* section.title-part {
-        margin-top: 30px;
-    }
-    section.list-part .item > div:first-child > div:last-child {
-        display: flex;
-    }
-    section.list-part .item > div:last-child {
-        display: none;
-    } */
+@media (min-width: 577px) {
     section.title-part {
         margin-top: 30px;
     }
@@ -115,17 +106,15 @@ section.social-part .container > div > div {
         margin-top: 30px;
     }
 }
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     section.title-part {
         margin-top: 30px;
     }
-}
-@media (min-width: 1280px) {
+} */
+@media (min-width: 1200px) {
     section.title-part {
         margin-top: 0;
     }
-}
-@media (min-width: 1435px) {
     section.list-part .item > div:first-child > div:last-child {
         display: flex;
     }
@@ -133,3 +122,11 @@ section.social-part .container > div > div {
         display: none;
     }
 }
+/* @media (min-width: 1435px) {
+    section.list-part .item > div:first-child > div:last-child {
+        display: flex;
+    }
+    section.list-part .item > div:last-child {
+        display: none;
+    }
+} */

@@ -223,7 +223,7 @@ section.product-part {
 
 
 
-@media (max-width: 639px) {
+@media (max-width: 576px) {
     section.title-part {
         height: 598px;
     }
@@ -270,7 +270,7 @@ section.product-part {
     }
     
 }
-@media (min-width: 640px) {
+@media (min-width: 577px) {
     .title-part button.black-btn {
         margin-top: 17px;
     }
@@ -338,7 +338,7 @@ section.product-part {
         margin-left: auto;
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     /* .title-part .right-ele {
         right: 0;
     }
@@ -349,32 +349,23 @@ section.product-part {
         width: 262px;
     } */
     section.product-part {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .archive-part > div {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    .archive-card:nth-child(even) {
+    .archive-card:nth-child(3n+2) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .archive-card:nth-child(3n+3) {
         margin-left: auto;
     }
-}
-@media (min-width: 1280px) {
-    
-    section.product-part {
-        grid-template-columns: 1fr 1fr;
-    }
-    .archive-part > div {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 0px;
-    }
-    .archive-card {
-        width: 262px;
-    }
-    .archive-card:nth-child(3n + 2) {
-        margin-left: auto;
+    .archive-card:nth-child(3n+4) {
+        margin-left: 0;
     }
 }
-@media (min-width: 1435px) {
+@media (min-width: 1200px) {
     .title-part .left-ele .scroll-down {
         display: none;
     }
@@ -388,6 +379,28 @@ section.product-part {
     .title-part .right-ele .scroll-down {
         display: flex;
     }
+    section.product-part {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .archive-part > div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 0px;
+    }
+    .archive-card {
+        width: 262px;
+    }
+    .archive-card:nth-child(3n + 2) {
+        margin-left: auto;
+    }
+    .archive-card:nth-child(3n + 3) {
+        margin-right: auto;
+    }
+    .archive-card:nth-child(3n + 4) {
+        margin-left: auto;
+    }
+}
+@media (min-width: 1435px) {
+    
     section.product-part {
         grid-template-columns: 1fr 1fr 1fr;
     }
